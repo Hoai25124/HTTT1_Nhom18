@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string-array name="loai">
+        <item>Pizza</item>
+        <item>Món khai vị</item>
+        <item>Thức uống</item>
+    </string-array>
+</resources>

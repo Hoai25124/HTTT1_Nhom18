@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView android:id="@+id/tvName"
+            android:textStyle="bold"
+            android:text="Pizza Lava"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvPrice"
+            android:text="269.000đ"
+            android:textColor="#2196F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnMinus"
+                android:text="-"
+                android:minWidth="0dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView android:id="@+id/tvQuantity"
+                android:gravity="center"
+                android:text="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <Button android:id="@+id/btnPlus"
+                android:text="+"
+                android:minWidth="0dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:src="@drawable/ic_delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="@android:color/darker_gray" />
+</LinearLayout>
